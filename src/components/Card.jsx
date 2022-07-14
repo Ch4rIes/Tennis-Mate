@@ -9,7 +9,7 @@ export default function Card(props) {
             <p>
                 Level: {props.skillLevel} 
                 <br/>
-                location: {props.location}
+                location: {props.location}     
                 <br/>
                 Date: {props.date}
             </p>
