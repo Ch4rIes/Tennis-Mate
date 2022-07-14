@@ -1,0 +1,30 @@
+import React from 'react'
+import '../App.css'
+import Card from './Card'
+
+export default function Home() {
+  return (
+    <div className="cards">
+        <Card imgurl="https://images.unsplash.com/photo-1551773188-0801da12ddae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+        courtName="Jericho beach"
+        date="July 20th"
+        location="Vancouver"
+        skillLevel="Advanced"
+        />
+        <Card imgurl="https://images.unsplash.com/photo-1567220720374-a67f33b2a6b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3132&q=80"
+        courtName="Palo Alto city center"
+        date="July 22th"
+        location="Vancouver"
+        skillLevel="Beginner"
+        />
+        <Card imgurl="https://images.unsplash.com/photo-1620742820748-87c09249a72a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+        courtName="Richmond"
+        date="July 24th"
+        location="Richmond"
+        skillLevel="Beginner"
+        />
+        
+    </div>
+    
+  )
+}
