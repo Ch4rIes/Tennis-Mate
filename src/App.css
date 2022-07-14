@@ -1,7 +1,88 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+
+nav{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  padding:30px 25px;
+  color:burlywood;
 }
 
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(12rem , 16rem));
+  gap:2rem;
+  justify-content: center;
+}
+.Card{
+  overflow: hidden;
+  box-shadow: 0 2px 20px grey;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+  
+}
+.Card > h3{
+  padding: 1rem;
+}
+.Card > p{
+  padding: 0 1rem;
+}
+.Card > button{
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid;
+  border-radius: 25px;
+  transition:background 200ms ease-in, color 200ms ease-in;
+}
+.cardimg{
+  height:12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.login{
+  align-items: center;
+  height: 60px;
+  color:#282c34;
+}
+
+main{
+  padding: 55px 27px;
+  color: black;
+}
+
+
+nav > img{
+  height: 70px;
+  
+}
+
+nav > Link{
+  margin: 0;
+  text-decoration: none;
+}
+
+.title{
+  margin-right: auto;
+  color: #61DAFB;
+  font-size: 22px;
+}
+
+body{
+  background-color: white;
+  font-family: Oxygen , sans-serif;
+  margin:2rem;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
