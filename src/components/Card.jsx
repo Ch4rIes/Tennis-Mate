@@ -1,7 +1,11 @@
 import React from 'react'
+import {useState} from 'react'
+import CardDetailModal from './CardDetailModal'
 
 export default function Card(props) {
-  return (
+    const [modal , setModal] = useState(false);
+    return (
+    <>
     <div className='wrapper'>
         <div className='Card'>
             <img src={props.imgurl} className='cardimg'></img> 
@@ -13,9 +17,23 @@ export default function Card(props) {
                 <br/>
                 Date: {props.date}
             </p>
-            <button> View Details </button>
+            <button onClick={()=>{setModal(true)}}> View Details </button>
+            
     </div>
     </div>
+    {modal && <CardDetailModal 
+    setModal={setModal} 
+    imgurl ={props.imgurl} 
+    location= {props.location} 
+    date= {props.date} 
+    courtName={props.courtName} 
+    skillLevel={props.skillLevel}
+    OP= {props.OP}
+    Email = {props.Email}
+    People = {props.People}
+    />}
+    </>
+    
     
   )
 }
