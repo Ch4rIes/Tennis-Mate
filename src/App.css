@@ -72,8 +72,11 @@ nav > img{
   
 }
 
+nav > button{
+  margin: 30px;
+}
 nav > Link{
-  margin: 0;
+  margin: 10px;
   text-decoration: none;
 }
 

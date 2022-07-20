@@ -29,7 +29,7 @@ export default function CardDetailModal(props) {
             <div className='cardInfo'>
             People: {props.People}
             </div>
-            
+
 
                 
             </main>

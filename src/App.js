@@ -6,16 +6,17 @@ import Home from './components/Home';
 import Login from './components/Login';
 import {useState} from 'react'
 import CardDetailModal from './components/CardDetailModal';
+import AddEvent from './components/AddEvent';
 
 function App() {
-  
+  const [emodal , setEmodal] = useState(false);
+
   return (
     <Router>
       <div className="App">
-      <Navbar/>
-      
+      <Navbar setEmodal = {setEmodal}/>
+      {emodal && <AddEvent setEmodal = {setEmodal}/>}
       <Routes>
-
         <Route path="/" element={<Home/>} />
         <Route path="/Login" element={<Login/>} />
       </Routes>
