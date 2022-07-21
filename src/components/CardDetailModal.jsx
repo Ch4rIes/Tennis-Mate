@@ -1,7 +1,12 @@
 import React from 'react'
 import '../App.css';
 export default function CardDetailModal(props) {
-  return (
+    const add_person = (e) => {
+        const idd = props.idf
+        const desi = '/add_person/' + props.idf
+        fetch(desi)
+      };
+    return (
     <>
           <div className="overlay"></div>
           <div className="modal">
@@ -29,8 +34,7 @@ export default function CardDetailModal(props) {
             <div className='cardInfo'>
             People: {props.People}
             </div>
-
-
+            {props.login && <button onClick={add_person}>Add Me!</button>}
                 
             </main>
           </div>

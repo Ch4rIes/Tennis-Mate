@@ -31,6 +31,8 @@ export default function Card(props) {
     OP= {props.OP}
     Email = {props.Email}
     People = {props.People}
+    login = {props.login}
+    idf = {props.idf}
     />}
     </>
     
