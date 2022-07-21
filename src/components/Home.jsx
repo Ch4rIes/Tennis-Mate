@@ -3,7 +3,7 @@ import '../App.css'
 import Card from './Card'
 import {useState, useEffect} from 'react'
 
-export default function Home() {
+export default function Home(props) {
   const [card , setCard] = useState([]);
   useEffect(()=>{
     fetch("/get_post").then(
@@ -26,8 +26,11 @@ export default function Home() {
         date = {cur.date}
         OP = "charles"
         courtName = {cur.courtName}
+        idf = {cur.id}
+        login = {props.login}
       />)
   });
+  console.log(allCards)
 
   return (
     <div className="cards">

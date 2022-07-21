@@ -78,6 +78,7 @@ nav > button{
 nav > Link{
   margin: 10px;
   text-decoration: none;
+  padding: 10px;
 }
 
 .title{
