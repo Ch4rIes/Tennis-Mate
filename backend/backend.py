@@ -15,7 +15,7 @@ db = SQLAlchemy(app)
 CORS(app)
 login_manager = LoginManager(app)
 bcrypt = Bcrypt(app)
-app.secret_key = "wellthisisasecretkey"
+app.secret_key = "gg"
 
 class User(db.Model , UserMixin):
     __tablename__ = 'Users'
